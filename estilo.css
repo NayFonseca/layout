@@ -1,0 +1,150 @@
+body {
+    background-color: #222;
+    font-family: sans-serif;
+    /*position: relative;*/
+    color: #f7f7f7;
+}
+
+header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    /*align-items: baseline;*/
+    justify-content: space-between;
+    margin-bottom: 50px;
+    height: 20%;
+    padding: 50px 50px;
+}
+
+h2 {
+    color: #f7f7f7;
+    padding: 0;
+    margin: 0 5px;
+    font-size: 30px;
+    font-weight: 200;
+    width: 50px;
+}
+
+nav {
+    width: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    padding: 0 10px;
+}
+
+nav a,
+nav a:visited {
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+.conta {
+    background-color: #222;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid #840ec9;
+    padding: 10px;
+}
+
+.conta::placeholder {
+    color: #f7f7f7;
+}
+
+main {
+    /* display: inline-block;*/
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+#foto {
+    float: right;
+}
+
+img {
+    background-position: right center;
+    background-size: cover;
+}
+
+h1 {
+    padding: 0;
+    margin: 0 5px;
+    font-size: 60px;
+}
+
+h1.cor {
+    color: #840ec9;
+}
+
+p {
+    padding-right: 300px;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 15px;
+    border: 0;
+    padding: 10px;
+
+}
+
+.dadosCor {
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+button {
+    background-color: #840ec9;
+    border: 2px solid #840ec9;
+    border-radius: 20px;
+    padding: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+}
+
+footer {
+    font-size: smaller;
+    position:
+        /*relative*/
+        absolute;
+    bottom: 0%;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    div {
+        width: 200px;
+        height: 200px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    footer {
+        position: relative;
+        height: 100%;
+        width: auto;
+    }
+}
